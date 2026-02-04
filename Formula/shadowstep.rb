@@ -5,6 +5,7 @@ class Shadowstep < Formula
   homepage "https://github.com/s4l1hs/ShadowStep"
   url "https://github.com/s4l1hs/ShadowStep/archive/refs/heads/main.tar.gz"
   sha256 "ef5c0dc621cea8b7c2e359c44c7f90cb7c2d9d8c951e6b04e4a6a9227db256b5"
+  version "1.0.1"
   license "MIT"
 
   depends_on "python@3.11"
