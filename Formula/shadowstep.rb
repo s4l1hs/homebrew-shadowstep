@@ -3,15 +3,16 @@ class Shadowstep < Formula
 
   desc "Advanced system artifact & metadata management suite"
   homepage "https://github.com/s4l1hs/ShadowStep"
-  url "https://github.com/s4l1hs/ShadowStep/archive/refs/heads/main.tar.gz"
-  sha256 "ef5c0dc621cea8b7c2e359c44c7f90cb7c2d9d8c951e6b04e4a6a9227db256b5"
+  url "https://files.pythonhosted.org/packages/source/s/shadowstep/shadowstep-1.0.2.tar.gz"
   version "1.0.2"
+  sha256 "f18ab9742babb3b02546dce028c6b7c3a6f6a2a285d2928ce26acc026ecd9126"
   license "MIT"
 
   depends_on "python@3.11"
+  depends_on "libyaml"
 
   resource "pyyaml" do
-    url "https://files.pythonhosted.org/packages/source/p/pyyaml/pyyaml-6.0.3.tar.gz"
+    url "https://files.pythonhosted.org/packages/source/p/pyyaml/PyYAML-6.0.3.tar.gz"
     sha256 "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f"
   end
 
@@ -35,6 +36,6 @@ class Shadowstep < Formula
   end
 
   test do
-    system "#{bin}/shadowstep", "--help"
+    system bin/"shadowstep", "--help"
   end
 end
