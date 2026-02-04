@@ -3,8 +3,8 @@ class Shadowstep < Formula
 
   desc "Advanced system artifact & metadata management suite"
   homepage "https://github.com/s4l1hs/ShadowStep"
-  url "https://files.pythonhosted.org/packages/source/s/shadowstep/shadowstep-1.0.1.tar.gz"
-  sha256 "01b70ea48efed3b5ca454959052973c6c74d3c2d3dddf0733f71bb660975c060"
+  url "https://github.com/s4l1hs/ShadowStep/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   license "MIT"
 
   depends_on "python@3.11"
